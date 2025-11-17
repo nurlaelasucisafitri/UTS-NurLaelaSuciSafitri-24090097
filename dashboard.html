@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Web 1 - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html" id="dashboardLink" class="active" title="Dashboard">
+                    <i class="fas fa-home"></i> 
+                </a>
+                <a href="products.html" id="productsLink" title="Data Produk">
+                    <i class="fas fa-th-large"></i> 
+                </a>
+                <a href="#revenue" id="revenueBtn" title="Revenue">
+                    <i class="fas fa-dollar-sign"></i> 
+                </a>
+                <a href="#reports" id="reportsBtn" title="Reports">
+                    <i class="fas fa-chart-bar"></i> 
+                </a>
+                <a href="#settings" id="settingsBtn" title="Settings / Logout">
+                    <i class="fas fa-cog"></i> 
+                </a>
+                <a href="index.html" id="logoutBtn" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i> 
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="header-title">Dashboard</h1>
+
+            <div class="summary-cards">
+                <div class="card summary-card">
+                    <i class="fas fa-cubes summary-icon"></i>
+                    <p>Total Products</p>
+                    <div id="totalProducts" class="value">0</div>
+                </div>
+
+                <div class="card summary-card">
+                    <i class="fas fa-shopping-cart summary-icon"></i>
+                    <p>Total Sales</p>
+                    <div id="totalSales" class="value">0</div>
+                </div>
+
+                <div class="card summary-card">
+                    <i class="fas fa-dollar-sign summary-icon"></i>
+                    <p>Total Revenue</p>
+                    <div id="totalRevenue" class="value">0</div>
+                </div>
+            </div>
+            
+            <div class="card" style="padding: 30px;">
+                <button id="goToProductsBtn" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Lihat Data Produk</button>
+            </div>
+             <div class="card" style="height: 250px; margin-top: 20px; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; color: #999;">
+                Area untuk Grafik atau Informasi Tambahan...
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
